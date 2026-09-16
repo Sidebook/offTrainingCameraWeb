@@ -1,9 +1,13 @@
-<html>
+<!doctype html>
+<html lang="ja">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>免責事項とプライバシーポリシー | オフトレカメラ</title>
     <style>
         * {
+            box-sizing: border-box;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             color: #333
         }
@@ -31,7 +35,9 @@
 
         .icon {
             margin-right: 1rem;
+            flex-shrink: 0;
         }
+        .header > div { min-width: 0; }
 
         .container {
             background-color: white;
@@ -47,6 +53,13 @@
             display: flex;
             flex-direction: row;
             margin-top: 2rem;
+        }
+        body { width: 100%; max-width: 960px; margin: auto; line-height: 1.75; overflow-wrap: anywhere; }
+        a { overflow-wrap: anywhere; }
+        @media (max-width: 600px) {
+            body { padding: 1rem; }
+            .container { padding: 1rem 1.25rem; }
+            .header h1 { font-size: 1.3rem; }
         }
     </style>
 </head>
@@ -67,43 +80,51 @@
         <h1>免責事項</h1>
         本アプリの使用中に発生したデバイスの盗難、破損、その他いかなる損害や問題についても、開発者は一切の責任を負いかねます。ご了承ください。
         <hr>
+        <section id="ja" lang="ja">
         <h1>プライバシーポリシー</h1>
-        <h2>利用者情報の取得</h2>
-        本アプリが利用者の個人情報を取得することはありません．
-
-        <h2>利用者情報の利用</h2>
-        本アプリが利用者の個人情報を利用することはありません．
-
-        <h2>利用者情報の第三者提供</h2>
-        本アプリが利用者の個人情報を第三者へ提供することはありません．
-
-        <h2>使用ツール</h2>
-        本アプリは，利用状況やアプリのクラッシュなどのデータ収集のため，Firebase(Google Inc.)を使用しており，利用者のデバイスに関する情報や利用状況などを自動で取得する場合があります．
-        取得したデータは本アプリの改善および広報のみに使用されます．第三者への提供および個人情報への紐付けはされません．
-
-        <h2>お問い合わせ先</h2>
-        何かご不明な点がございましたら<a href="https://forms.gle/S5WT4zg5FYjQigD78">フォーム</a>からお問い合わせください
+        <p>更新日：2026年9月16日。このポリシーはRyu Wakimoto・Yui Wakimotoが提供するShred Snap（オフトレカメラ）に適用されます。</p>
+        <h2>動画・写真・メモと端末の権限</h2>
+        <p>カメラとマイクは動画・音声の撮影に、写真ライブラリへのアクセスは動画の保存・一覧表示・再生・共有・削除などに使用します。動画や写真は端末の写真ライブラリ等へ、メモや設定はアプリの保存領域へ保存します。これらの動画・写真やメモ本文を、利用状況分析のデータとして開発者へ自動送信する処理はありません。OSの写真同期やバックアップ、利用者が選んだ共有先では、それぞれのサービスの規約が適用されます。</p>
+        <p>位置情報を許可した場合、撮影動画に撮影場所を記録できます。共有する動画に位置情報が含まれる場合があります。各権限はOSの設定で変更できます。権限を無効にすると対応する機能が利用できなくなる場合があります。</p>
+        <h2>利用状況とエラー情報</h2>
+        <p>アプリの改善、不具合の調査、利用傾向の把握のため、Google LLCのGoogle Analytics for FirebaseとFirebase Crashlyticsを使用します。アプリの起動・操作、撮影設定や録画時間、再生・検索・共有の操作、メモの有無や文字数、端末機種・OS・アプリのバージョン、インストール識別子、クラッシュやエラーの情報などがGoogleへ送信される場合があります。メモ本文や検索語そのものは分析イベントに含めません。エラー報告にはスタックトレースや診断用のエラーメッセージが含まれます。</p>
+        <p>SDKは端末の権限・OS・設定に応じて広告識別子等を扱う場合があります。分析サービスではネットワーク情報に基づくおおまかな地域情報等が処理されることがあります。「詳細なログを送信する」は追加のログを制御する設定であり、オフにしても通常の利用状況分析やクラッシュ報告をすべて停止する設定ではありません。</p>
+        <h2>QRコード認識用のML Kit</h2>
+        <p>Android版には、今後のQRコード認識機能に備えてGoogle ML Kitのバーコード認識SDKが含まれています。現在の版ではQRコードを読み取る操作は提供していません。ML Kitの画像認識は端末内で実行されます。SDKが利用される際には、更新の確認や診断・利用状況情報等の送信が行われる場合があります。今後機能を提供する際には、読み取った情報の扱いを機能に合わせて案内します。</p>
+        <h2>外部サービスと問い合わせ</h2>
+        <p>上記の分析・診断情報はGoogleのサービスで処理されます。処理・保存が利用者の国以外で行われる場合があります。取り扱いの詳細は<a href="https://firebase.google.com/support/privacy">Firebaseのプライバシー情報</a>、<a href="https://policies.google.com/privacy">Googleプライバシーポリシー</a>、<a href="https://developers.google.com/ml-kit/terms">ML Kitの規約とプライバシー情報</a>をご確認ください。</p>
+        <p>お問い合わせにはGoogle Formsを使用します。送信された問い合わせ内容と、利用者が記入した連絡先等は、問い合わせへの対応に使用します。外部リンクを開いた場合はリンク先のサービスにも情報が送信される場合があります。</p>
+        <h2>保存・削除とご相談</h2>
+        <p>メモや設定はアプリの保存領域に保持され、アプリの削除等で削除できます。写真ライブラリに保存された動画はアプリ削除後も残ることがあるため、必要に応じて写真アプリ等から削除してください。同期先やバックアップ内のデータは各サービスの設定で管理してください。</p>
+        <p>Googleへ送信した分析・診断情報は、各サービスの保持設定・規約に従って保存されます。端末上の削除操作で送信済みの情報が直ちに削除されるわけではありません。情報の取り扱い、開示・削除等についてのご相談は<a href="https://forms.gle/mk4iys4qKfdJXTnNA">お問い合わせフォーム</a>からお寄せください。対象データを識別できる範囲で、適用される法令に従い対応します。</p>
+        <h2>ポリシーの変更</h2>
+        <p>機能や利用するサービスの変更に応じて、このページと更新日を変更します。必要な場合はアプリ等でも変更をお知らせします。</p>
+        </section>
 
         <hr>
         <h1>Disclaimer</h1>
         The developer assumes no responsibility for any theft, damage, or any other problems that may occur while using this app. Please be aware of this.
         <hr>
+        <section id="en" lang="en">
         <h1>Privacy Policy</h1>
-        <h2>Collection of User Information</h2>
-        This app does not collect any personal information from users.
-
-        <h2>Use of User Information</h2>
-        This app does not use any personal information from users.
-
-        <h2>Third-party Provision of User Information</h2>
-        This app does not provide any personal information to third parties.
-
-        <h2>Tools Used</h2>
-        This app uses Firebase (Google Inc.) for collecting usage statistics and crash data, and may automatically collect information about users' devices and usage patterns.
-        The collected data is used only for app improvement and promotional purposes. It is not shared with third parties or linked to personal information.
-
-        <h2>Contact</h2>
-        If you have any questions, please contact us through this <a href="https://forms.gle/S5WT4zg5FYjQigD78">form</a>
+        <p>Updated September 16, 2026. This policy applies to Shred Snap (Off Training Camera), provided by Ryu Wakimoto and Yui Wakimoto.</p>
+        <h2>Media, notes and device permissions</h2>
+        <p>The camera and microphone capture video and audio. Photo-library access supports saving, browsing, playing, sharing and deleting media. Media is saved to your device's photo library or local storage; notes and settings are stored in the app. The app does not automatically upload these media files or note text to the developers for usage analytics. OS photo syncing, backups and destinations you choose when sharing are governed by those services' terms.</p>
+        <p>If you allow location access, the app can record the filming location in videos. Shared videos may retain this information. You can change permissions in your device settings; disabling them may make the corresponding features unavailable.</p>
+        <h2>Usage and diagnostic information</h2>
+        <p>We use Google LLC's Google Analytics for Firebase and Firebase Crashlytics to improve the app, investigate failures and understand usage. Data sent to Google may include app launches and interactions, recording settings and duration, playback, search and sharing actions, note presence and length, device model, OS and app versions, installation identifiers, crashes and errors. Analytics events do not contain note text or search terms. Error reports include stack traces and diagnostic error messages.</p>
+        <p>SDKs may handle advertising identifiers depending on permissions, OS and settings. Analytics services may process approximate region information derived from network information. “Send detailed logs” controls additional logging; turning it off does not disable all standard analytics or crash reporting.</p>
+        <h2>ML Kit for QR recognition</h2>
+        <p>The Android app includes Google's ML Kit barcode-recognition SDK for a planned QR feature. The current version does not provide a QR-scanning action. ML Kit image recognition runs on the device. When the SDK is used, it may check for updates and send diagnostic and usage information. We will explain how decoded information is handled when the feature becomes available.</p>
+        <h2>External services and support</h2>
+        <p>The analytics and diagnostic data described above is processed through Google services and may be processed or stored outside your country. See <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>, the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://developers.google.com/ml-kit/terms">ML Kit Terms &amp; Privacy</a> for details.</p>
+        <p>Our contact form uses Google Forms. We use the information you submit, including any contact details you provide, to respond to your inquiry. Opening external links may also send information to the destination service.</p>
+        <h2>Retention, deletion and requests</h2>
+        <p>Notes and settings remain in app storage and can be removed by deleting the app or clearing its data. Videos saved to the photo library may remain after uninstalling the app; delete them using your photo app when needed. Manage synced copies and backups through the relevant service settings.</p>
+        <p>Analytics and diagnostics already sent to Google are retained under the services' retention settings and terms. Deleting local data does not immediately delete previously transmitted data. For questions or access/deletion requests, use our <a href="https://forms.gle/mk4iys4qKfdJXTnNA">contact form</a>. We will respond under applicable law to the extent that the relevant data can be identified.</p>
+        <h2>Policy changes</h2>
+        <p>We will update this page and its date when features or services change, and provide additional notice in the app or elsewhere when needed.</p>
+        </section>
     </div>
     <div class="footer">
         <p class="text-muted">&copy; 2021 - Ryu Waimoto, Yui Wakimoto</p>
