@@ -1,113 +1,25 @@
-<html>
-
-<head>
-    <title>免責事項とプライバシーポリシー | オフトレカメラ</title>
-    <style>
-        * {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            color: #333
-        }
-
-        body {
-            background-color: #111111;
-            padding: 3rem 3rem;
-        }
-
-        .header {
-            align-items: center;
-            justify-content: flex-start;
-            display: flex;
-            flex-direction: row;
-            margin-bottom: 3rem;
-        }
-
-        .text-white {
-            color: white;
-        }
-
-        .text-muted {
-            color: #ddd;
-        }
-
-        .icon {
-            margin-right: 1rem;
-        }
-
-        .container {
-            background-color: white;
-            
-            padding: 1rem 3rem;
-            padding-bottom: 2rem;
-            border-radius: 1rem;
-        }
-
-        .footer {
-            align-items: center;
-            justify-content: center;
-            display: flex;
-            flex-direction: row;
-            margin-top: 2rem;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="header">
-        <img class="icon" src="icon.png" width="70px" height="70px" alt="icon"/>
-        <div>
-            <h1 class="text-white" style="margin: 0 0;">オフトレカメラ / Shred Snap</h1>
-            <p class="text-muted" style="margin: 0 0">
-                スキー・スノーボード向けのセルフタイマー機能付カメラ<br>
-                Camera App for Snowboard / Ski Training with build-in timer
-            </p>
-        </div>
-    </div>
-    <div class="container">
-        <i>English version is at the bottom of the page.</i>
-        <h1>免責事項</h1>
-        本アプリの使用中に発生したデバイスの盗難、破損、その他いかなる損害や問題についても、開発者は一切の責任を負いかねます。ご了承ください。
-        <hr>
-        <h1>プライバシーポリシー</h1>
-        <h2>利用者情報の取得</h2>
-        本アプリが利用者の個人情報を取得することはありません．
-
-        <h2>利用者情報の利用</h2>
-        本アプリが利用者の個人情報を利用することはありません．
-
-        <h2>利用者情報の第三者提供</h2>
-        本アプリが利用者の個人情報を第三者へ提供することはありません．
-
-        <h2>使用ツール</h2>
-        本アプリは，利用状況やアプリのクラッシュなどのデータ収集のため，Firebase(Google Inc.)を使用しており，利用者のデバイスに関する情報や利用状況などを自動で取得する場合があります．
-        取得したデータは本アプリの改善および広報のみに使用されます．第三者への提供および個人情報への紐付けはされません．
-
-        <h2>お問い合わせ先</h2>
-        何かご不明な点がございましたら<a href="https://forms.gle/S5WT4zg5FYjQigD78">フォーム</a>からお問い合わせください
-
-        <hr>
-        <h1>Disclaimer</h1>
-        The developer assumes no responsibility for any theft, damage, or any other problems that may occur while using this app. Please be aware of this.
-        <hr>
-        <h1>Privacy Policy</h1>
-        <h2>Collection of User Information</h2>
-        This app does not collect any personal information from users.
-
-        <h2>Use of User Information</h2>
-        This app does not use any personal information from users.
-
-        <h2>Third-party Provision of User Information</h2>
-        This app does not provide any personal information to third parties.
-
-        <h2>Tools Used</h2>
-        This app uses Firebase (Google Inc.) for collecting usage statistics and crash data, and may automatically collect information about users' devices and usage patterns.
-        The collected data is used only for app improvement and promotional purposes. It is not shared with third parties or linked to personal information.
-
-        <h2>Contact</h2>
-        If you have any questions, please contact us through this <a href="https://forms.gle/S5WT4zg5FYjQigD78">form</a>
-    </div>
-    <div class="footer">
-        <p class="text-muted">&copy; 2021 - Ryu Waimoto, Yui Wakimoto</p>
-    </div>
-</body>
-
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>プライバシーポリシーの移転 / Privacy Policy moved | Shred Snap</title>
+    <link rel="canonical" href="https://shredsnap.app/privacy-policy/">
+    <script>
+      const target = new URL("https://shredsnap.app/privacy-policy/");
+      const requested = new URLSearchParams(location.search).get("lang");
+      const anchor = location.hash.slice(1).toLowerCase();
+      const language = ["ja", "en"].includes(requested) ? requested
+        : ["ja", "en"].includes(anchor) ? anchor : null;
+      if (language) target.searchParams.set("lang", language);
+      location.replace(target.href);
+    </script>
+    <noscript><meta http-equiv="refresh" content="0; url=https://shredsnap.app/privacy-policy/"></noscript>
+  </head>
+  <body>
+    <h1>プライバシーポリシーの移転 / Privacy Policy moved</h1>
+    <p>Shred Snapのプライバシーポリシー・免責事項は新しいページへ移転しました。</p>
+    <p>The Shred Snap Privacy Policy and Disclaimer have moved.</p>
+    <p><a href="https://shredsnap.app/privacy-policy/?lang=ja" lang="ja">日本語</a> / <a href="https://shredsnap.app/privacy-policy/?lang=en" lang="en">English</a></p>
+  </body>
 </html>
