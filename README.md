@@ -10,6 +10,6 @@ an HTTP 301/308.
 Only the root/index entrypoint moves. `icon.png` and all `mockImages/` assets
 remain served at their existing paths (the app still references them).
 
-Publish [the new-site PR](https://github.com/Sidebook/shred-snap-static-sites/pull/1)
-first and verify both languages, then publish this redirect. Keep both PRs
-unmerged until review is complete.
+[The new-site PR](https://github.com/Sidebook/shred-snap-static-sites/pull/1)
+was merged on October 19, 2026. Its Pages deployment succeeded and the updated
+policy is available. This redirect can be published after review.
